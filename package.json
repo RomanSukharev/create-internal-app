@@ -1,0 +1,31 @@
+{
+  "name": "create-internal-app",
+  "version": "0.1.0",
+  "description": "CLI-установщик Internal Template: одна команда → новый проект + мастер настройки",
+  "type": "module",
+  "bin": {
+    "create-internal-app": "./bin/create-internal-app.mjs",
+    "gen-internal-entity": "./bin/gen-internal-entity.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "config.default.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.8.1"
+  },
+  "scripts": {
+    "start": "node bin/create-internal-app.mjs",
+    "gen:entity": "node bin/gen-internal-entity.mjs"
+  },
+  "keywords": [
+    "create",
+    "nuxt",
+    "internal-template"
+  ],
+  "license": "UNLICENSED"
+}
